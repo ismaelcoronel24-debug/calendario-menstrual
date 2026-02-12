@@ -8,7 +8,7 @@ body {
     background: white;
     padding: 20px;
     margin: 20px auto;
-    width: 300px;
+    width: 320px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
 }
@@ -20,4 +20,38 @@ button {
     color: white;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+#calendario {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.dia {
+    padding: 10px;
+    background-color: #f8bbd0;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.hoy {
+    border: 2px solid black;
+}
+
+.periodo {
+    background-color: #e53935;
+    color: white;
+}
+
+.fertil {
+    background-color: #f06292;
+    color: white;
+}
+
+.ovulacion {
+    background-color: #8e24aa;
+    color: white;
 }
